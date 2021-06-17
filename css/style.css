@@ -155,7 +155,8 @@ div .bottom-proj {
 
 .logos {
   height: 5em;
-  margin: 0% 2%; }
+  margin: 0% 2%;
+  margin-top: 3%; }
 
 .so-far {
   display: inline-block;
