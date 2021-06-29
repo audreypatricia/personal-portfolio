@@ -30,14 +30,35 @@ document.addEventListener('DOMContentLoaded',function(event){
         }, 20000);
      }
      // check if dataText[i] exists
-    if (i < dataText[i].length) {
-      // text exists! start typewriter animation
-     typeWriter(dataText[i], 0, function(){
-       // after callback (and whole text has been animated), start next text
-       StartTextAnimation(i + 1);
-     });
-    }
+     if(dataText[i]){
+       if (i < dataText[i].length) {
+         // text exists! start typewriter animation
+        typeWriter(dataText[i], 0, function(){
+          // after callback (and whole text has been animated), start next text
+          StartTextAnimation(i + 1);
+        });
+       }
+     }
+
   }
   // start the text animation
   StartTextAnimation(0);
+});
+
+$( document ).ready(function() {
+  const navbar = $('#navbar');
+  const personalLinks = $('.personal_links');
+  let windowScroll = window.scrollY;
+
+  window.addEventListener('scroll', function(e){
+    console.log(window.scrollY)
+    if(window.scrollY >= 497){
+      console.log('here');
+      navbar.css({'background-color': '#D3D3D3'});
+      personalLinks.removeClass("hidden");
+    } else if(window.scrollY < 497){
+      navbar.css({'background-color': 'rgba(169, 169, 169, 0.3)'});
+      personalLinks.addClass("hidden");
+    }
+  });
 });

@@ -116,7 +116,7 @@ body {
   margin-left: 5%;
 }
 
-i.fa-2x {
+.contacts i.fa-2x {
   display: inline-block;
   border-radius: 60px;
   box-shadow: 0px 0px 2px rgba(192, 192, 192, 0.5);
@@ -549,6 +549,9 @@ nav {
   background-color: rgba(169, 169, 169, .3);
   display: flex;
   justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
 nav a {
@@ -594,4 +597,19 @@ nav a:last-child {
   50% {
     border-color: transparent;
   }
+}
+
+.brand_logo{
+  position: absolute;
+  left: 10px;
+  height: 4em;
+}
+
+.name_brand {
+  position: absolute;
+  left: 6%;
+}
+
+#navbar-links{
+  height: 3em;
 }

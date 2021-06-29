@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Hello World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Audrey's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="js/jquery.js" charset="utf-8"></script>
@@ -18,7 +19,14 @@
   <body>
 
     <div class="header">
-      <nav>
+      <nav id="navbar">
+        <img class="brand_logo" src="./assets/brand_logo.svg" alt="">
+        <img class="name_brand" src="./assets/name_brand.svg" alt="">
+
+        <a class="personal_links hidden" href="https://www.linkedin.com/in/audrey-patricia/" target="_blank"><i class="fab fa-1x fa-linkedin-in"></i></a>
+        <a class="personal_links hidden" href="https://github.com/audreypatricia/" target="_blank"><i class="fab fa-1x fa-github-alt"></i></a>
+        <a class="personal_links hidden" href="mailto:audreypatricia1101@gmail.com" target="_blank"><i class="fas fa-1x fa-envelope"></i></a>
+
         <a href="#about">About Me</a>
         <a href="#projects">Projects</a>
         <a href="#skills">My Skills</a>
@@ -321,8 +329,5 @@
 </div>
 </div>
 
-
-
-<script src="js/index/js" charset="utf-8"></script>
 </body>
 </html>
