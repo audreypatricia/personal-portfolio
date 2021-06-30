@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
-  var dataText = [ "Hello World 👋", "I am a Full-Stack Developer.", "I Love to Create through Code!", "I am Looking for a Great Team to Join."];
+  var dataText = [ "Hello World 👋", "I am a Full-Stack Developer.", "I love to create through code!", "I am looking to create impact alongside a great team"];
 
   // type one text in the typwriter
   // keeps calling itself until the text is finished
@@ -46,19 +46,48 @@ document.addEventListener('DOMContentLoaded',function(event){
 });
 
 $( document ).ready(function() {
+  console.log("hello wolrd");
   const navbar = $('#navbar');
   const personalLinks = $('.personal_links');
-  let windowScroll = window.scrollY;
 
-  window.addEventListener('scroll', function(e){
-    console.log(window.scrollY)
-    if(window.scrollY >= 497){
-      console.log('here');
-      navbar.css({'background-color': '#D3D3D3'});
-      personalLinks.removeClass("hidden");
-    } else if(window.scrollY < 497){
-      navbar.css({'background-color': 'rgba(169, 169, 169, 0.3)'});
+  window.scroll(function() {
+    console.log("hi");
+  });
+
+  $('body').on('scroll', function(e){
+    navbar.css({'background-color': 'rgba(94, 179, 197, 1)'});
+    personalLinks.removeClass("hidden");
+
+    if(document.body.scrollTop === 0 ){
+      navbar.css({'background-color': 'rgba(94, 179, 197, .3)'});
       personalLinks.addClass("hidden");
     }
+
   });
+
+  const brandLogo = $('.brand_logo');
+  const brandName = $('.name_brand');
+
+  if(window.innerWidth <= 850){
+    brandLogo.addClass("hidden");
+  }
+
+  if(window.innerWidth < 500){
+    brandName.addClass("hidden");
+  }
+
+  setInterval(function(){
+    if(window.innerWidth <= 850){
+      brandLogo.addClass("hidden");
+    } else {
+      brandLogo.removeClass("hidden");
+    }
+
+    if(window.innerWidth < 500){
+      brandName.addClass("hidden");
+    } else {
+      brandName.removeClass("hidden");
+    }
+  }, 1000)
+
 });
