@@ -640,6 +640,16 @@ nav a {
   .logos {
     height: 3em; } }
 
+@media (max-width: 768px) {
+  .contact-text {
+    position: absolute; }
+  .contact-details {
+    margin-left: 2%; }
+  .wavey-turtle {
+    position: absolute;
+    bottom: -550px;
+    right: -100px; } }
+
 @media (max-width: 650px) {
   #desc-card {
     width: 18em !important; }
