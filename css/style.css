@@ -632,7 +632,13 @@ nav a {
   div.contacts {
     margin-top: 10%; }
     div.contacts .fa-2x {
-      font-size: 14px; } }
+      font-size: 14px; }
+  #skills {
+    padding: 6% 7%; }
+    #skills img.jq {
+      width: 150px; }
+  .logos {
+    height: 3em; } }
 
 @media (max-width: 650px) {
   #desc-card {
@@ -661,6 +667,10 @@ nav a {
     margin-top: 20%; }
   div.contacts {
     margin-top: 15%; } }
+
+@media (max-width: 440px) {
+  nav a {
+    font-size: 11px; } }
 
 @media (max-width: 400px) {
   div.type h1 {

@@ -72,7 +72,7 @@ $( document ).ready(function() {
     brandLogo.addClass("hidden");
   }
 
-  if(window.innerWidth < 500){
+  if(window.innerWidth < 515){
     brandName.addClass("hidden");
   }
 
@@ -83,7 +83,7 @@ $( document ).ready(function() {
       brandLogo.removeClass("hidden");
     }
 
-    if(window.innerWidth < 500){
+    if(window.innerWidth < 515){
       brandName.addClass("hidden");
     } else {
       brandName.removeClass("hidden");
